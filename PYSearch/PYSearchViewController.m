@@ -158,7 +158,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     // Adjust the view according to the `navigationBar.translucent`
     if (NO == self.navigationController.navigationBar.translucent) {
         self.baseSearchTableView.contentInset = UIEdgeInsetsMake(0, 0, self.view.py_y, 0);
